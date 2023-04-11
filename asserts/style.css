@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body {
+    scroll-behavior: smooth;
+    background-color: #eae1d3;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contraBureau {
+    display: flex;
+    text-decoration: none;
+    /* padding: 20%; */
+}
+
+.logo {
+    margin-top: 20%;
+    margin-left: 10%;
+    margin-bottom: 20%;
+    width: 80vw;
+}
+
+.all-conternaire {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100vw;
+    height: 13vw;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    transition: 0.75s ease-in-out;
+    background-position: center;
+    background-size: cover;
+    transform: translateY(50%);
+}
+
+.backgroundim {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    transition: all 0.5s linear;
+
+}
+
+.all-conternaire:hover .back {
+    transform: translateY(-200%);
+    z-index: -1;
+
+}
+
+.all-conternaire:hover .backgroundim {
+    transform: scale(1.25);
+}
+
+.all-conternaire:hover p {
+    color: #eae1d3;
+}
+
+.all-conternaire:hover h1 {
+    color: #eae1d3;
+
+}
+
+.all-conternaire:hover h2 {
+    color: #eae1d3;
+}
+
+.conternaire {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    width: 90%;
+    height: 7vw;
+    transform: translateY(50%);
+
+
+}
+
+.back {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 13vw;
+    background-color: #eae1d3;
+    z-index: 0;
+    transition: all 0.5s;
+
+}
+
+/* .conternaire::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.15vw;
+    background-color: #c92d1f;
+    z-index: 1;
+} */
+
+/* hr {
+    width: 50vw;
+    height: 0.15vw;
+    background-color: #c92d1f;
+} */
+
+.tittle {
+    display: flex;
+    align-items: flex-start;
+    z-index: 1;
+}
+
+.descrition {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: end;
+    z-index: 1;
+
+}
+
+.souligne {
+    text-decoration: underline;
+
+}
+
+
+p {
+
+    color: #c92d1f;
+    margin: 0;
+    padding: 0;
+    font-family: 'Crimson Text', sans-serif;
+    transition: all 0.75s ease-in-out;
+
+
+}
+
+h2 {
+
+
+    color: #c92d1f;
+    margin: 0;
+    padding: 0;
+    font-family: 'Crimson Text', sans-serif;
+    transition: all 0.75s ease-in-out;
+
+}
+
+h1 {
+
+    color: #c92d1f;
+    font-size: 7vw;
+    margin: 0;
+    padding: 0;
+    font-family: 'Crimson Text', sans-serif;
+    font-weight: 400;
+    height: 100%;
+    line-height: 5.5vw;
+    transition: all 0.75s ease-in-out;
+    margin-left: 5%;
+    white-space: nowrap;
+
+}
+
+
+.beforeline .conternaire {
+    transform: translateY(0%);
+    animation: 0.75s ease-in jackuzy;
+}
+
+
+.beforeline::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.15vw;
+    background-color: #c92d1f;
+    z-index: 1;
+    animation: 0.75s ease-in aparetre;
+
+}
+
+@keyframes aparetre {
+    0% {
+        transform: translateY(100%);
+        width: 20%;
+    }
+
+    100% {
+        width: 100%;
+        transform: translateY(0);
+    }
+}
+
+@keyframes jackuzy {
+    0% {
+        transform: translateY(50%);
+
+    }
+
+    100% {
+        transform: translateY(0);
+
+    }
+}
